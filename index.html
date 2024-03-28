@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.image {
+    max-width: 50%;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <img
+  src="https://i.ibb.co/FzkdCTx/IMG-
+  5516.png" alt="IMG-5516" class="image">
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meine Webseite</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      transition: background-color 0.0s ease; /* Füge eine Hintergrundfarben-Änderungsanimation hinzu */
+      background-color: #4A4E69; /* Setze die Hintergrundfarbe auf Schwarz */
+      color: #fff; /* Setze die Textfarbe auf Weiß */
+    }
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -250px; /* Verstecke die Sidebar standardmäßig */
+      width: 250px;
+      height: 100%;
+      background-color: #4A4E69; /* Setze die Hintergrundfarbe der Sidebar auf Schwarz */
+      transition: left 0.3s ease; /* Füge eine Animation hinzu */
+    }
+    .sidebar.active {
+      left: 0; /* Zeige die Sidebar, wenn sie aktiv ist */
+    }
+    .menu-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 999; /* Stelle sicher, dass der Button über anderen Elementen liegt */
+    }
+    .content {
+      margin-left: 30px; /* Schaffe Platz für den Menü-Button */
+      transition: margin-left 0.3s ease; /* Füge eine Animation hinzu */
+    }
+    .sidebar.active .content {
+      margin-left: 280px; /* Setze die Position der Webseite, wenn das Menü aktiv ist */
+    }
+    .sidebar.active ul {
+      padding-top: 50px; /* Verschiebe die Links nach unten, wenn das Menü aktiv ist */
+    }
+    .black-bar {
+      height: 10px;
+      background-color: #000;
+      transition: margin-left 0.3s ease; /* Füge eine Animation hinzu */
+    }
+    .contact {
+      margin-top: 10px; /* Schaffe Platz für den Menü-Button */
+      transition: margin-left 0.3s ease; /* Füge eine Animation hinzu */
+    }
+    .sidebar ul {
+      list-style-type: none; /* Entferne die Aufzählungszeichen der Liste */
+      padding: 0;
+    }
+    .sidebar ul li a {
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      color: #fff; /* Setze die Schriftfarbe der Links auf Weiß */
+    }
+    .sidebar ul li a:hover {
+      background-color: #333; /* Ändere die Hintergrundfarbe der Links beim Hover-Effekt */
+
+      box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5); /* Leuchteffekt hinzufügen */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <button class="menu-btn" onclick="toggleMenu()">☰ öffnen</button>
+      <h1 id="welcome-text">Willkommen auf meiner Webseite</h1>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <nav>
+      <ul>
+
+        <li><a href="https://www.tiktok.com/@mikail.mne?_t=8d9mVfWtdVK&_r=1">Tiktok</a>
+          <li><a href="Kalender.html"> Islam Kalender </a>
+
+        <li><a href="zitate.html"> zitate</a>
+
+        <li><a href="quran.html"> quran </a>
+
+        <li><a href="Support.html"> support</a>
+                <li><a href="ubermich.html"> über mich </a>
+
+
+        <li><a href="islam.html">islam</a>
+        <li><a href="quiz.html"> quiz </a>   <li><a href="glauben.html"> Glaubensgrundsätze</a>
+ <li><a href="Datenschutz.html"> Datenschutz</a>
+       <li><a href="Update.html"> App update </a>
+ <li><a 
+</ul>
+          </nav>
+        </aside>
+
+ <main class="content"> <!-- Füge die Klasse "content" hinzu -->
+    <section>
+      <h2></h2>
+      Inhalte der Website
+
+      <div class="navigation">
+          <ul>
+              <li>Tiktok</li>
+               <li>Islam Kalender</li>
+              <li> Zitate </li>
+              <li>Quran</li>
+              <li>Support</li>
+              <li> Über mich </li>
+              <li>islam</li>
+            <li>quiz</li>
+          <li>Glaubensgrundsätze</li>
+        <li> Datenschutz </li>
+            <li> update info</li>
+        </ul>
+     
+      
+      
+      </div>
+ 
+    </section>
+
+
+    <section>
+      <h2> weitere Seiten </h2> <a> </a> 
+
+        </div> <button onclick="alert('Version 3.5.0\n Webseite ist auf dem neuesten Stand:\n\nDieses Update enthält wichtige Fehlerbehebungen \n neue Funktion\nSicherheitPatch-Ebene 02.02.2024')">Version anzeigen</button>
+
+              <h3><a 
+               </div> <button onclick="alert('Webseite zuletzt aktualisiert am:\n 02.02.2024')"> Zeige letzte Aktualisierung</button>
+
+                <h6>
+                &copy; Mikail 2024. Alle Rechte vorbehalten
+
+  <script>
+    function toggleMenu() {
+      var sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active'); // Füge oder entferne die Klasse "active"
+
+      if (sidebar.classList.contains('active')) {
+        document.querySelector('.menu-btn').textContent = '✖️ Schließen'; // Ändere den Text des Menü-Buttons
+      } else {
+        document.querySelector('.menu-btn').textContent = '☰ Öffnen'; // Setze den Text des Menü-Buttons zurück
+      }
+    }
+  </script>
